@@ -5,10 +5,13 @@ Based on http://prefetch.net/code/ssl-cert-check, uses [hairlom-mailx](http://he
 to send notifications.
 
 Endpoints to be monitored can be given in a file /ssl_endpoints_list:
+
 ```
+# /ssl_endpoints_list
 domain.ext 443
 domain2.ext 465
 ```
+
 or via the `ENDPOINTS` environment variable.
 
 The checks will run only once unless `CHECK_INTERVAL` or `DAILY_TIME` variables are set.
