@@ -1,0 +1,8 @@
+$([[ -v SMTP_SSL_NOVERIFY ]] && { echo "
+  set ssl-verify=ignore
+"; })
+set smtp-auth=login
+set smtp=${SMTP_URI}
+set smtp-auth-user=${SMTP_USER}
+set smtp-auth-password=${SMTP_PASS}
+set from=${SMTP_FROM}
